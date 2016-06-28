@@ -1,9 +1,8 @@
-var myApp = require('./../myapp.js')
 //
 // var aboutCtrl = function(){myApp.controller('AboutCtrl',['$scope' , ]);
 // };
 
-var aboutCtrl = function ($scope) {
+var aboutCtrl = function () {
     var about = this;
     about.hello = "About controller";
 

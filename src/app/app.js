@@ -23,7 +23,7 @@
 // });
 require('./styles/style.css');
 //require('angular');
-require('./myapp.js');
+require('./myapp');
 // require('./controllers/home');
 // require('./controllers/about');
 // require('./views/home.html');

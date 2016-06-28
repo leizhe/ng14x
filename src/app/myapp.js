@@ -20,6 +20,6 @@ myApp.config(['$routeProvider' ,function ($routeProvider) {
         redirectTo: '/home'
       });
     }]);
-myApp.controller('homeCtrl',  homeCtrl);
+myApp.controller('homeCtrl',  ['$scope' , homeCtrl]);
 myApp.controller('aboutCtrl',  aboutCtrl);
 module.exports = myApp;
