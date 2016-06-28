@@ -7,7 +7,7 @@ module.exports = {
   entry: {},
   module: {
     loaders: [
-       { test: /\.html$/, loader: 'raw' },
+       { test: /\.html$/, loader: 'raw' },//{ test: /\.html$/, loader: 'file?name=templates/[name]-[hash:6].html' },
        { test: /\.css$/, loader: 'style!css' }
     ]
   },

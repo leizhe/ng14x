@@ -24,8 +24,10 @@
 require('./styles/style.css');
 //require('angular');
 require('./myapp.js');
-require('./controllers/home.js');
-require('./controllers/about.js');
+// require('./controllers/home');
+// require('./controllers/about');
+// require('./views/home.html');
+// require('./views/about.html');
 // var angular = require('angular');
 // var myApp = angular.module('myApp' , []);
 // myApp.controller('HomeCtrl',['$scope' , function ($scope) {
