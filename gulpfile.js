@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var webpack = require('webpack');
 var path = require('path');
-var sync = require('run-sequence');
 var gutil = require('gulp-util');
 var serve = require('browser-sync');
 var webpackDevMiddelware = require('webpack-dev-middleware');
