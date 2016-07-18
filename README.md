@@ -1,7 +1,9 @@
 # ng14x
-angular1.4.x gulp webpack showcase
+this is a showcase of angular1.4.x & gulp & webpack 
 
 #How to run?
-1.npm install -g gulp webpack 
-1.npm install 
-2.gulp serve
+1.npm install -g gulp webpack
+
+2.npm install 
+
+3.gulp serve
