@@ -21,9 +21,10 @@
 //         redirectTo: '/'
 //       });
 // });
+require('./styles/style.css');
 var $ = require('jquery');
 require('bootstrap-webpack!../../bootstrap.config.js');
-require('./styles/style.css');
+
 //require('angular');
 require('./myapp');
 // require('./controllers/home');
