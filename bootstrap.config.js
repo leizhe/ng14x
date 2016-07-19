@@ -22,7 +22,7 @@ module.exports = {
 
     "normalize": true,
     "print": true,
-    "row":true,
+    
     "scaffolding": true,
     "type": true,
     "code": true,
