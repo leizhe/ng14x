@@ -22,7 +22,7 @@
 //       });
 // });
 var $ = require('jquery');
-require('bootstrap');
+require('bootstrap-webpack!../../bootstrap.config.js');
 require('./styles/style.css');
 //require('angular');
 require('./myapp');

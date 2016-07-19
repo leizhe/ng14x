@@ -7,8 +7,12 @@ module.exports = {
   entry: {},
   module: {
     loaders: [
-       { test: /\.html$/, loader: 'raw' },//{ test: /\.html$/, loader: 'file?name=templates/[name]-[hash:6].html' },
-       { test: /\.css$/, loader: 'style!css' }
+      { test: /\.html$/, loader: 'raw' },//{ test: /\.html$/, loader: 'file?name=templates/[name]-[hash:6].html' },
+      { test: /\.css$/, loader: 'style!css' },
+      {test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff'},
+      {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
+      {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
+      {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}
     ]
   },
   plugins: [
@@ -21,10 +25,10 @@ module.exports = {
       hash: true
     }),
     new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        'root.jQuery': 'jquery'
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      'root.jQuery': 'jquery'
     }),
     // Automatically move all modules defined outside of application directory to vendor bundle.
     // If you are using more complicated project structure, consider to specify common chunks manually.
