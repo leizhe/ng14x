@@ -21,6 +21,8 @@
 //         redirectTo: '/'
 //       });
 // });
+var $ = require('jquery');
+require('bootstrap');
 require('./styles/style.css');
 //require('angular');
 require('./myapp');

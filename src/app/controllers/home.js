@@ -12,6 +12,12 @@ var homeCtrl = function ($scope) {
     'AngularJS',
     'Karma'
   ];
+
+  $(function() {
+  	var a = $('.row').children();
+    console.log(a);
+  });
+
   home.hello= "Home controller";
   $scope.hello = "Home Controller by $scope";
   console.log('This is Home controller');
