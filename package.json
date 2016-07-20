@@ -17,6 +17,7 @@
     "jquery": "^3.1.0"
   },
   "devDependencies": {
+    "bower-webpack-plugin": "^0.1.9",
     "browser-sync": "^2.13.0",
     "connect-history-api-fallback": "^1.2.0",
     "css-loader": "^0.23.1",
