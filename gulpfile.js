@@ -7,7 +7,7 @@ var webpackDevMiddelware = require('webpack-dev-middleware');
 var webpachHotMiddelware = require('webpack-hot-middleware');
 var colorsSupported = require('supports-color');
 var historyApiFallback = require('connect-history-api-fallback');
-
+var del = require('del');
 var root = 'src';
 
 var resolveToApp = function(glob){
@@ -27,6 +27,25 @@ var paths = {
   output: root,
   dest: path.join(__dirname, 'dist')
 }
+
+gulp.task('webpack', ['clean'], (cb) => {
+  const config = require('./webpack.dist.config');
+  config.entry.app = paths.entry;
+
+  webpack(config, (err, stats) => {
+    if(err)  {
+      throw new gutil.PluginError("webpack", err);
+    }
+
+    gutil.log("[webpack]", stats.toString({
+      colors: colorsSupported,
+      chunks: false,
+      errorDetails: true
+    }));
+
+    cb();
+  });
+});
 
 gulp.task('serve' , function(){
   var config = require('./webpack.dev.config');
@@ -56,3 +75,14 @@ gulp.task('serve' , function(){
     ]
   });
 });
+
+gulp.task('watch', ['serve']);
+
+gulp.task('clean', (cb) => {
+  del([paths.dest]).then(function (paths) {
+    gutil.log("[clean]", paths);
+    cb();
+  })
+});
+
+gulp.task('default', ['watch']);
