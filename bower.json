@@ -1,0 +1,17 @@
+{
+  "name": "ng14",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/liuziyuan/ng14x",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "spin.js": "^2.3.2"
+  }
+}
