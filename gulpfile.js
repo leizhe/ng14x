@@ -16,7 +16,7 @@ var resolveToApp = function(glob){
 
 var paths = {
   js: resolveToApp('**/*.js'),
-  css:resolveToApp('styles/*.css'),
+  css:resolveToApp('**/*.css'),
   html: [
     resolveToApp('**/*.html'),
     path.join(root, 'index.html')
