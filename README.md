@@ -2,7 +2,7 @@
 this is a showcase of angular1.4.x & gulp & webpack 
 
 #How to run?
-1.npm install -g gulp webpack
+1.npm install -g gulp webpack bower
 
 2.npm install 
 
