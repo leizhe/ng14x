@@ -7,7 +7,7 @@
 
 //var Spinner = require('spin');
 var Spinner = require('spin.js');
-var homeCtrl = function ($scope) {
+var homeCtrl = function ($scope , $http) {
   var home = this;
 
   this.awesomeThings = [
@@ -15,6 +15,11 @@ var homeCtrl = function ($scope) {
     'AngularJS',
     'Karma'
   ];
+
+  $http.post('http://localhost:8649/api/services/app/user/CreateUser',{name:'liuziyuan' , address:'dalian'})
+    .success(function(data) {
+      console.log(data);
+    });
 
   $(function () {
     var a = $('.row').children();
