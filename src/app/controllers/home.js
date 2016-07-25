@@ -16,10 +16,10 @@ var homeCtrl = function ($scope , $http) {
     'Karma'
   ];
 
-  $http.post('http://localhost:8649/api/services/app/user/CreateUser',{name:'liuziyuan' , address:'dalian'})
-    .success(function(data) {
-      console.log(data);
-    });
+  // $http.post('http://localhost:8649/api/services/app/user/CreateUser',{name:'liuziyuan' , address:'dalian'})
+  //   .success(function(data) {
+  //     console.log(data);
+  //   });
 
   $(function () {
     var a = $('.row').children();

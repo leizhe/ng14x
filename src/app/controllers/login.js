@@ -1,12 +1,13 @@
-//
-// var aboutCtrl = function(){myApp.controller('AboutCtrl',['$scope' , ]);
-// };
+var loginCtrl = function ($scope,$http,$state) {
+    var login = this;
 
-var aboutCtrl = function ($scope,$http) {
-    var about = this;
-    about.hello = "About controller";
-    $scope.hello2 =" Scope Hello";
+    login.username = "123";
+    login.password = "123";
+    login.login = function() {
+        // todo
+        $state.go('main');
 
+    }
     // $http.post('http://localhost:8649/api/services/app/user/GetUsers' , { name:'liuziyuan'})
     //   .success(function (data) {
     //     console.log(data);
@@ -21,7 +22,7 @@ var aboutCtrl = function ($scope,$http) {
     // .success(function(data) {
     //   console.log(data);
     // });
-    console.log('This is About controller');
+    console.log('This is Login controller');
   };
-aboutCtrl.$inject = ['$scope','$http'];
-module.exports = aboutCtrl;
+loginCtrl.$inject = ['$scope','$http' ,'$state' ];
+module.exports = loginCtrl;
