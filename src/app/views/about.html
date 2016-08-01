@@ -1,8 +1,7 @@
 <div>
 
     <p>This is the about view.</p>
-    {{about.hello}}
-    {{hello2}}
+    {{about.hello}} {{hello2}}
     <script type="text/ng-template" id="alert.html">
         <div class="alert" style="background-color:#fa39c3;color:white" role="alert">
             <div ng-transclude></div>
@@ -10,4 +9,10 @@
     </script>
     <uib-alert template-url="alert.html">A happy alert!</uib-alert>
 
+    <div class="container">
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion"></ul>
+    </div>
 </div>

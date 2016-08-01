@@ -14,7 +14,10 @@
     "angular-ui-router": "^0.3.1",
     "bootstrap": "^3.3.6",
     "bootstrap-webpack": "0.0.5",
-    "jquery": "^3.1.0"
+    "highcharts": "^4.2.5",
+    "jquery": "^3.1.0",
+    "ms-signalr-client": "^2.2.5",
+    "signalr": "^2.2.1"
   },
   "devDependencies": {
     "bower-webpack-plugin": "^0.1.9",
